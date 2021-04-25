@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutCompat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/back">
+
+
+ <TextView
+     android:id="@+id/textView"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:fontFamily="sans-serif-light"
+     android:gravity="center"
+     android:text="SonicASL"
+     android:textAlignment="center"
+     android:textColor="#c0cad1"
+     android:textSize="40sp"
+     android:textStyle="bold"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
+
+
+ <TextView
+     android:id="@+id/input_text"
+     android:layout_width="320dp"
+     android:layout_height="130dp"
+     android:layout_marginBottom="16dp"
+     android:background="@drawable/rounded_corner"
+     android:text="I come help you"
+     android:textColor="#151515"
+     android:textSize="26dp"
+     app:layout_constraintBottom_toTopOf="@+id/edit_text"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.491"
+     app:layout_constraintStart_toStartOf="parent" />
+
+ <EditText
+     android:id="@+id/edit_text"
+     android:layout_width="320dp"
+     android:layout_height="130dp"
+     android:layout_marginTop="180dp"
+     android:background="@drawable/rounded_corner_yellow"
+     android:text="Thanks a lot"
+     android:textSize="26dp"
+     android:textColor="#0E0E0E"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.491"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+ <TextView
+     android:id="@+id/textView3"
+     android:layout_width="220dp"
+     android:layout_height="60dp"
+     android:background="@drawable/rounded_corner"
+     android:gravity="center"
+     android:text="English(US)"
+     android:textAlignment="center"
+     android:textColor="#c0cad1"
+     android:textSize="36sp"
+     android:textStyle="bold"
+     app:layout_constraintBottom_toTopOf="@+id/Speak"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.47"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/edit_text"
+     app:layout_constraintVertical_bias="0.171" />
+
+ <ImageButton
+     android:id="@+id/Speak"
+     android:layout_width="60dp"
+     android:layout_height="60dp"
+     android:layout_marginBottom="160dp"
+     android:adjustViewBounds="true"
+     android:background="#00BCAEAE"
+     android:scaleType="fitCenter"
+     android:src="@android:drawable/ic_media_play"
+     android:text="Speak!!"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toStartOf="@+id/Load"
+     app:layout_constraintHorizontal_bias="0.492"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/edit_text"
+     app:layout_constraintVertical_bias="1.0"
+     tools:src="@drawable/play_button" />
+
+ <ImageButton
+     android:id="@+id/Load"
+     android:layout_width="60dp"
+     android:layout_height="60dp"
+     android:layout_marginEnd="96dp"
+     android:layout_marginRight="96dp"
+     android:adjustViewBounds="true"
+     android:background="#00FFFFFF"
+     android:scaleType="fitCenter"
+     android:src="@android:drawable/ic_lock_power_off"
+     android:text="Load!!"
+     app:layout_constraintBottom_toBottomOf="@+id/Speak"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintTop_toTopOf="@+id/Speak"
+     app:layout_constraintVertical_bias="0.0"
+     tools:src="@android:drawable/ic_lock_power_off" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
